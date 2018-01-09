@@ -1,4 +1,5 @@
-// Simple Rest Api that fetches json page from the url
+// Package restclient is a simple package
+// that fetches json page from the url
 package main
 
 import (
