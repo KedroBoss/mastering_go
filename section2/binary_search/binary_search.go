@@ -31,7 +31,7 @@ func iterBinarySearch(array []int, target, minIndex, maxIndex int) int {
 	mini := minIndex
 	maxi := maxIndex
 	var mid int
-	for mini < maxi {
+	for mini <= maxi {
 		mid = int((mini + maxi) / 2)
 		if array[mid] > target {
 			maxi = mid
@@ -46,7 +46,7 @@ func iterBinarySearch(array []int, target, minIndex, maxIndex int) int {
 }
 
 func main() {
-	// DO NOT USE NON-EXISTING 
+	// DO NOT USE NON-EXISTING
 	a := binarySearch(primes, 7, 0, 10)
 	fmt.Println(a)
 }
